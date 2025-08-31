@@ -10,18 +10,15 @@ Vesktop is a custom Discord desktop app
 - Much more lightweight and faster than the official Discord app
 - Windows NT 6.x (Vista _with [Extended kernel](https://win32subsystem.live/extended-kernel/download/)_, 7, 8, 8.1) Support
 - Windows 32-bit support
+- macOS Catalina 10.15 Support
 - Much better privacy, since Discord has no access to your system
 
 **Not yet supported**:
 - Global Keybinds
-  
-<img width="1920" height="1080" alt="Screenshot 2025-08-30 144257" src="https://github.com/user-attachments/assets/d323e20d-afe8-472f-92ba-da6b8b7b9f1a" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5605d220-3cf6-41b2-ae8c-5f36443eb9ce" />
-<img width="1920" height="1080" alt="Screen_Shot_2025-08-31_at_5 17 42_PM" src="https://github.com/user-attachments/assets/4e2b4f20-7792-4c47-a981-9513742e9663" />
 
-## Installing
-
-Visit https://vesktop.vencord.dev/install
+<img width="1920" height="1080" alt="Screenshot 2025-08-30 144257" src="https://github.com/user-attachments/assets/a23d305b-774b-44b7-a0b5-47eb20b4ef72" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fa321b41-6ede-474a-9fc9-8624d8565373" />
+<img width="1920" height="1080" alt="Screen Shot 2025-08-31 at 5 17 42 PM" src="https://github.com/user-attachments/assets/4c8eb491-1287-471d-bb42-5b73f1e0d6ff" />
 
 ## Building from Source
 
@@ -37,8 +34,8 @@ Packaging will create builds in the dist/ folder
 
 ## For Windows
 You’ll need the following 2 files:  
-- [Modified Electron 28](https://github.com/TK50P/electron-port/releases/download/v28.0.0/local_electron.zip)  
-- [electron.js](https://github.com/TK50P/electron-port/releases/download/v28.0.0/electron.js)
+- [Modified Electron 28](https://github.com/TK50P/Equibop-Legacy/raw/refs/heads/main/local_electron.zip)  
+- [electron.js](https://raw.githubusercontent.com/TK50P/Equibop-Legacy/refs/heads/main/scripts/electron.js) (Use `curl` or `wget` to fetch this file)
 
 Place the unpacked, modified version of Electron 28 in the root of the source and name the folder `local_electron`.  
 Inside this folder, you **must** include the files:  
