@@ -1,9 +1,28 @@
-# Vesktop
+# Vesktop-Legacy
 
-Vesktop is a custom Discord desktop app
+Vesktop is a custom Discord desktop app but for Legacy OSes support
 
 > [!NOTE]  
 > If you're looking for ported version of Equicord's Equibop, please look [here](https://github.com/TK50P/Equibop-Legacy).
+
+### Why I did this shit
+
+I was curious if Vesktop would work on Windows 7. Tried it — **boom**, `DiscardVirtualMemory` error.  
+So I opened an issue: [#363](https://github.com/Vencord/Vesktop/issues/363) — and the response?  
+> "Upgrade to Windows 10."
+
+**Seriously? That's it?** No fallback, no real reasoning — just brushed off.  
+So I said screw it — I ported it myself.  
+Now it runs on:
+- Windows 7
+- Windows 8 / 8.1
+- **Even 32-bit systems**
+
+Even worse? the NSIS Installer did not had OS detections and it just installed without ANY errors. more like **clickbait**.<br>
+That’s the story. That’s why this exists.
+<img width="805" height="743" alt="Screenshot 2025-09-02 at 6 18 41 PM" src="https://github.com/user-attachments/assets/49b26901-f55b-4de9-9f6e-575caff856e0" />
+
+**This explains how they are really pissed off to me. I am pissed off _too_.**
 
 **Main features**:
 - Vencord preinstalled
