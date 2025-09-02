@@ -20,9 +20,9 @@ Now it runs on:
 
 Even worse? the NSIS Installer did not had OS detections and it just installed without ANY errors. more like **clickbait**.<br>
 That’s the story. That’s why this exists.
-<img width="805" height="743" alt="Screenshot 2025-09-02 at 6 18 41 PM" src="https://github.com/user-attachments/assets/49b26901-f55b-4de9-9f6e-575caff856e0" />
 
-**This explains how they are really pissed off to me. I am pissed off _too_.**
+**I am pissed off to Vencord devs.**
+<!-- If you want this repository taken down, good luck. Maybe you shouldn't released this ever. -->
 
 **Main features**:
 - Vencord preinstalled
