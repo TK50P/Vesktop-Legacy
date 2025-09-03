@@ -53,13 +53,13 @@ Packaging will create builds in the dist/ folder
 
 ## For Windows
 You’ll need the following 2 files:  
-- [Modified Electron 28](https://github.com/TK50P/Equibop-Legacy/raw/refs/heads/main/local_electron.zip)  
+- [Modified Electron](https://github.com/e3kskoy7wqk/Electron-for-windows-7) (Thanks to [@e3kskoy7wqk](https://github.com/e3kskoy7wqk))
 - [electron.js](https://raw.githubusercontent.com/TK50P/Equibop-Legacy/refs/heads/main/scripts/electron.js) (Use `curl` or `wget` to fetch this file)
 
 Place the unpacked, modified version of Electron 28 in the root of the source and name the folder `local_electron`.  
 Inside this folder, you **must** include the files:  
-- `electron-v28.0.0-win32-x64`
-- `electron-v28.0.0-win32-ia32`  
+- `electron-v37.2.2-win32-x64`
+- `electron-v37.0.0-win32-ia32`  
 - `package.json`
 
 Place the `electron.js` in `scripts` folder.
