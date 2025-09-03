@@ -78,9 +78,8 @@ Now, go to `"build"` section and add this line.
 For Example, if code is like this,
 ```js
     "build": {
-        "appId": "io.github.equicord.equibop",
-        "artifactName": "${productName}-${os}-${arch}.${ext}",
-        "productName": "Equibop",
+        "appId": "dev.vencord.vesktop",
+        "productName": "Vesktop",
         "files": [
             "!*",
             "!node_modules",
@@ -94,11 +93,10 @@ For Example, if code is like this,
 Place like this.
 ```js
     "build": {
-        "appId": "io.github.equicord.equibop",
-        "artifactName": "${productName}-${os}-${arch}.${ext}",
+        "appId": "dev.vencord.vesktop",
         "electronDist": "./local_electron/electron-v37.2.2-win32-x64",
         "electronVersion": "37.2.2",
-        "productName": "Equibop",
+        "productName": "Vesktop",
         "files": [
             "!*",
             "!node_modules",
@@ -137,8 +135,8 @@ In the following section, remove any other architecture definitions and ensure b
 Now, run this.
 
 ```sh
-git clone https://github.com/Equicord/Equibop
-cd Equibop
+git clone https://github.com/Vencord/Vesktop
+cd Vesktop
 
 # Install Dependencies
 pnpm i
@@ -161,8 +159,8 @@ For macOS, the setup is simpler than on Windows.
 You can simply downgrade the Electron version as follows:
 
 ```sh
-git clone https://github.com/Equicord/Equibop
-cd Equibop
+git clone https://github.com/Vencord/Vesktop
+cd Vesktop
 
 # Install dependencies
 pnpm i
