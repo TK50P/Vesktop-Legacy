@@ -16,6 +16,7 @@ import { AutoStartToggle } from "./AutoStartToggle";
 import { DeveloperOptionsButton } from "./DeveloperOptions";
 import { DiscordBranchPicker } from "./DiscordBranchPicker";
 import { NotificationBadgeToggle } from "./NotificationBadgeToggle";
+import { UserAssetsButton } from "./UserAssets";
 import { VesktopSettingsSwitch } from "./VesktopSettingsSwitch";
 import { WindowsTransparencyControls } from "./WindowsTransparencyControls";
 
@@ -82,7 +83,8 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
             description: "Adapt the splash window colors to your custom theme",
             defaultValue: true
         },
-        WindowsTransparencyControls
+        WindowsTransparencyControls,
+        UserAssetsButton
     ],
     Behaviour: [
         {
@@ -156,14 +158,13 @@ function SettingsSections() {
 
                     return (
                         <VesktopSettingsSwitch
+                            title={title}
+                            description={description}
                             value={Settings[key as any] ?? defaultValue}
                             onChange={v => (Settings[key as any] = v)}
-                            note={description}
                             disabled={disabled?.()}
                             key={key}
-                        >
-                            {title}
-                        </VesktopSettingsSwitch>
+                        />
                     );
                 })}
             </div>
@@ -179,8 +180,6 @@ export default ErrorBoundary.wrap(
     function SettingsUI() {
         return (
             <Forms.FormSection>
-                {/* FIXME: Outdated type */}
-                {/* @ts-expect-error Outdated type */}
                 <Text variant="heading-xl/semibold" color="header-primary" className="vcd-settings-title">
                     Vesktop Settings
                 </Text>
