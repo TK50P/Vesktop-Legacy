@@ -135,6 +135,9 @@ In the following section, remove any other architecture definitions and ensure b
 Now, run this.
 
 ```sh
+# Set architecture FIRST to build 32-bit (ia32) target
+set npm_config_arch=ia32
+
 git clone https://github.com/Vencord/Vesktop
 cd Vesktop
 
@@ -152,11 +155,60 @@ pnpm package
 ```
 
 ## For macOS Catalina (10.15)  
-For macOS, the setup is simpler than on Windows.
-> [!IMPORTANT]  
-> You **must** be using macOS Catalina as **host** to build it.
+> [!NOTE]  
+> Since macOS Catalina only supports Intel Macs, so building with universal binary is pointless.
+> 
+> You can replace `universal` with `x64` to build Intel Macs (x64 binaries) only.
 
-You can simply downgrade the Electron version as follows:
+Open `package.json` and replace like this.
+```js
+        "mac": {
+            "target": [
+                {
+                    "target": "default",
+                    "arch": [
+                        "universal"
+                    ]
+                }
+            ],
+            "category": "public.app-category.social-networking",
+            "darkModeSupport": true,
+            "extendInfo": {
+                "NSMicrophoneUsageDescription": "This app needs access to the microphone",
+                "NSCameraUsageDescription": "This app needs access to the camera",
+                "com.apple.security.device.audio-input": true,
+                "com.apple.security.device.camera": true,
+                "CFBundleIconName": "Icon"
+            },
+            "notarize": true
+        },
+```
+Change to like this.
+```js
+        "mac": {
+            "target": [
+                {
+                    "target": "default",
+                    "arch": [
+                        "x64"
+                    ]
+                }
+            ],
+            "minimumSystemVersion": "10.15.0",
+            "category": "public.app-category.social-networking",
+            "darkModeSupport": true,
+            "extendInfo": {
+                "NSMicrophoneUsageDescription": "This app needs access to the microphone",
+                "NSCameraUsageDescription": "This app needs access to the camera",
+                "com.apple.security.device.audio-input": true,
+                "com.apple.security.device.camera": true,
+                "CFBundleIconName": "Icon"
+            },
+            "notarize": true
+        },
+```
+
+Now, simply downgrade the Electron version as follows:
 
 ```sh
 git clone https://github.com/Vencord/Vesktop
