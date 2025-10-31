@@ -74,12 +74,15 @@ Now, go to `"build"` section and add this line.
 "electronDist": "./local_electron/electron-v37.2.2-win32-x64",
 "electronVersion": "37.2.2",
 ```
+> [!NOTE]
+> You must change `x64` to `ia32` if you are targetting to 32Bit.
 
 For Example, if code is like this,
 ```js
     "build": {
         "appId": "dev.vencord.vesktop",
         "productName": "Vesktop",
+        "executableName": "vesktop",
         "files": [
             "!*",
             "!node_modules",
@@ -94,9 +97,10 @@ Place like this.
 ```js
     "build": {
         "appId": "dev.vencord.vesktop",
+        "productName": "Vesktop",
+        "executableName": "vesktop",
         "electronDist": "./local_electron/electron-v37.2.2-win32-x64",
         "electronVersion": "37.2.2",
-        "productName": "Vesktop",
         "files": [
             "!*",
             "!node_modules",
