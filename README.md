@@ -55,9 +55,8 @@ Packaging will create builds in the dist/ folder
 > On Windows, if you run the test script, you will get test errors about venmic, you can ignore these as it's a linux only module.
 
 ## For Windows
-You’ll need the following 2 files:  
+You’ll need the following this file:  
 - [Modified Electron](https://github.com/e3kskoy7wqk/Electron-for-windows-7) (Thanks to [@e3kskoy7wqk](https://github.com/e3kskoy7wqk))
-- [electron.js](https://raw.githubusercontent.com/TK50P/Equibop-Legacy/refs/heads/main/scripts/electron.js) and [package.json](https://raw.githubusercontent.com/TK50P/Equibop-Legacy/refs/heads/main/local_electron/package.json) (Use `curl` or `wget` to fetch this file)
 
 Place the unpacked `dist-(x86).zip` in `local_electron`, rename to `electron-v37.2.2-win32-x64` for 64-Bit, and `electron-v37.2.2-win32-ia32` for 32-Bit.
 
@@ -68,7 +67,7 @@ Inside this folder, you **must** include the files:
 
 Place the `electron.js` in `scripts` folder.
 
-Now open `package.json`. Replace `pnpm build && electron .` with `node scripts/electron.js .`. <br>
+Now open `package.json`. Replace `pnpm build && electron .` with `pnpm build && local_electron\\electron-v37.2.2-win32-x64\\electron.exe .`. <br>
 In `"devDependencies"` section, replace `"electron"`'s version (e.g. `"^37.2.2"` with `"file:./local_electron"`). 
 
 Now, go to `"build"` section and add this line.
