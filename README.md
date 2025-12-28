@@ -63,9 +63,6 @@ Place the unpacked `dist-(x86).zip` in `local_electron`, rename to `electron-v37
 Inside this folder, you **must** include the files:  
 - `electron-v37.2.2-win32-x64` (for 64-Bit)
 - `electron-v37.2.2-win32-ia32` (for 32-Bit)
-- `package.json`
-
-Place the `electron.js` in `scripts` folder.
 
 Now open `package.json`. Replace `pnpm build && electron .` with `pnpm build && local_electron\\electron-v37.2.2-win32-x64\\electron.exe .`. <br>
 In `"devDependencies"` section, replace `"electron"`'s version (e.g. `"^37.2.2"` with `"file:./local_electron"`). 
