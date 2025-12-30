@@ -5,7 +5,7 @@ Vesktop is a custom Discord desktop app but for Legacy OSes support
 > [!CAUTION]
 > Usage of unofficial or ported clients is not guaranteed to function as intended. Future updates may break certain features or cause unexpected behavior.
 >
-> Do **not** open issues or contact Vencord support regarding unofficial clients — they are neither supported nor affiliated with Vencord.
+> **Don’t be stupid** — do **not** open issues or contact Vencord support. These clients are not supported or affiliated with **the official Vesktop** in any way.
 >
 > **Use at your own risk.**
 
