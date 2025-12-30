@@ -2,8 +2,12 @@
 
 Vesktop is a custom Discord desktop app but for Legacy OSes support
 
-> [!NOTE]  
-> If you're looking for ported version of Equicord's Equibop, please look [here](https://github.com/TK50P/Equibop-Legacy).
+> [!CAUTION]
+> Usage of unofficial or ported clients is not guaranteed to function as intended. Future updates may break certain features or cause unexpected behavior.
+>
+> Do **not** open issues or contact Vencord support regarding unofficial clients — they are neither supported nor affiliated with Vencord.
+>
+> **Use at your own risk.**
 
 ### Why I did this shit
 
