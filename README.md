@@ -22,6 +22,7 @@ Vesktop is a custom Discord desktop app but for Legacy OSes support
 
 <img width="1920" height="1080" alt="Windows Vista-2025-11-22-12-03-07" src="https://github.com/user-attachments/assets/255ca533-e0fa-4835-aa08-fb3890cc4f2c" />
 <img width="1920" height="1080" alt="Screenshot 2025-08-30 144257" src="https://github.com/user-attachments/assets/a23d305b-774b-44b7-a0b5-47eb20b4ef72" />
+<img width="1920" height="1080" alt="Windows_8_x64-2026-01-13-16-43-29" src="https://github.com/user-attachments/assets/f08eaf23-1da4-4239-9ae8-3ba0df460b36" />
 <img width="1920" height="1080" alt="Windows 8 1-2025-11-02-22-18-22" src="https://github.com/user-attachments/assets/0fe27733-68a8-43d6-8d44-8e84bf1d0db7" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fa321b41-6ede-474a-9fc9-8624d8565373" />
 <img width="1920" height="1080" alt="Screen Shot 2025-08-31 at 5 17 42 PM" src="https://github.com/user-attachments/assets/4c8eb491-1287-471d-bb42-5b73f1e0d6ff" />
