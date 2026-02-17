@@ -44,19 +44,19 @@ Packaging will create builds in the dist/ folder
 You’ll need the following this file:  
 - [Modified Electron](https://github.com/e3kskoy7wqk/Electron-for-windows-7) (Thanks to [@e3kskoy7wqk](https://github.com/e3kskoy7wqk))
 
-Place the unpacked `dist-(x86).zip` in `local_electron`, rename to `electron-v37.2.2-win32-x64` for 64-Bit, and `electron-v37.2.2-win32-ia32` for 32-Bit.
+Place the unpacked `dist-(x86).zip` in `local_electron`, rename to `electron-v40.0.2-win32-x64` for 64-Bit, and `electron-v40.0.2-win32-ia32` for 32-Bit.
 
 Inside this folder, you **must** include the files:  
-- `electron-v37.2.2-win32-x64` (for 64-Bit)
-- `electron-v37.2.2-win32-ia32` (for 32-Bit)
+- `electron-v40.0.2-win32-x64` (for 64-Bit)
+- `electron-v40.0.2-win32-ia32` (for 32-Bit)
 
-Now open `package.json`. Replace `pnpm build && electron .` with `pnpm build && local_electron\\electron-v37.2.2-win32-x64\\electron.exe .`. <br>
-In `"devDependencies"` section, replace `"electron"`'s version (e.g. `"^37.2.2"` with `"file:./local_electron"`). 
+Now open `package.json`. Replace `pnpm build && electron .` with `pnpm build && local_electron\\electron-v40.0.2-win32-x64\\electron.exe .`. <br>
+In `"devDependencies"` section, replace `"electron"`'s version (e.g. `"^40.0.2"` with `"file:./local_electron"`). 
 
 Now, go to `"build"` section and add this line.
 ```js
-"electronDist": "./local_electron/electron-v37.2.2-win32-x64",
-"electronVersion": "37.2.2",
+"electronDist": "./local_electron/electron-v40.0.2-win32-x64",
+"electronVersion": "40.0.2",
 ```
 > [!NOTE]
 > You must change `x64` to `ia32` if you are targetting to 32Bit.
@@ -83,8 +83,8 @@ Place like this.
         "appId": "dev.vencord.vesktop",
         "productName": "Vesktop",
         "executableName": "vesktop",
-        "electronDist": "./local_electron/electron-v37.2.2-win32-x64",
-        "electronVersion": "37.2.2",
+        "electronDist": "./local_electron/electron-v40.0.2-win32-x64",
+        "electronVersion": "40.0.2",
         "files": [
             "!*",
             "!node_modules",
