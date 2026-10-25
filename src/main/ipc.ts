@@ -11,9 +11,9 @@ import {
     app,
     BrowserWindow,
     clipboard,
+    ClipboardItem,
     dialog,
     IpcMainInvokeEvent,
-    nativeImage,
     RelaunchOptions,
     session,
     shell
@@ -149,7 +149,7 @@ handle(IpcEvents.SELECT_VENCORD_DIR, async (_e, value?: null) => {
     if (!res.filePaths.length) return "cancelled";
 
     const dir = res.filePaths[0];
-    if (!isValidVencordInstall(dir)) return "invalid";
+    if (!(await isValidVencordInstall(dir))) return "invalid";
 
     State.store.vencordDir = dir;
 
@@ -164,10 +164,14 @@ handle(IpcEvents.FLASH_FRAME, (_, flag: boolean) => {
 });
 
 handle(IpcEvents.CLIPBOARD_COPY_IMAGE, async (_, buf: ArrayBuffer, src: string) => {
-    clipboard.write({
-        html: `<img src="${src.replaceAll('"', '\\"')}">`,
-        image: nativeImage.createFromBuffer(Buffer.from(buf))
-    });
+    src = src.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+
+    clipboard.write([
+        new ClipboardItem({
+            "text/html": `<img src="${src}" />`,
+            "image/png": new Blob([buf], { type: "image/png" })
+        })
+    ]);
 });
 
 function openDebugPage(page: string) {
